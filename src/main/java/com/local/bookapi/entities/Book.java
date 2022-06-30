@@ -1,12 +1,10 @@
 package com.local.bookapi.entities;
 
 import javax.persistence.*;
-import java.io.Serializable;
-
 
 @Entity
-@Table(name = "books")
-public class Book implements Serializable {
+@Table(name = "Books")
+public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -60,5 +58,4 @@ public class Book implements Serializable {
                 ", authorName='" + authorName + '\'' +
                 '}';
     }
-
 }
